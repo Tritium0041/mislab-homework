@@ -1,0 +1,26 @@
+# model parameter setting
+batch_size = 128
+max_len = 256
+d_model = 512
+n_layers = 6
+n_heads = 8
+ffn_hidden = 2048
+drop_prob = 0.1
+
+# optimizer parameter setting
+init_lr = 1e-5
+factor = 0.9
+adam_eps = 5e-9
+patience = 10
+warmup = 100
+epoch = 1000
+clip = 1.0
+weight_decay = 5e-4
+inf = float('inf')
+
+SOS_ID = 0
+EOS_ID = 1
+UNK_ID = 2
+src_pad_idx = 3
+trg_pad_idx = 3
+trg_sos_idx = 0
